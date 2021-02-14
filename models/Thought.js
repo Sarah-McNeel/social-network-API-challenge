@@ -10,12 +10,12 @@ const ReactionSchema = new Schema(
         },
         reactionBody: {
             type: String,
-            required: "Reaction text is required",
+            required: "Text is required",
             max: 280
         },
         username: {
             type: String,
-            required: "Please proide your username"
+            required: "Please proide username"
         },
         createdAt: {
             type: Date,
@@ -30,7 +30,7 @@ const ReactionSchema = new Schema(
     }
 );
 
-const ThoughtSchema = new Schema(
+const thoughtSchema = new Schema(
     {
         thoughtText: {
             type: String,
@@ -59,11 +59,11 @@ const ThoughtSchema = new Schema(
     }
 );
 
-ThoughtSchema.virtual('reactionCount').get(function () {
+thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length
 });
 
-const Thought = model('Thought', ThoughtSchema);
+const Thought = model('Thought', thoughtSchema, 'Reation', ReactionSchema);
 
 module.exports = Thought;
 

@@ -1,19 +1,33 @@
 # social-network-API-challenge
+Description:
 
 A social media startup with an API for my social network that uses a NoSQL database-MongoDB, also uses Mongoose, Express.js and Moment.js
 so that my website can handle large amounts of unstructured data
-
-When you enter the command to invoke the application
-Then my server is started and the Mongoose models are synced to the MongoDB database
-When you open API GET routes in Insomnia Core for users and thoughts
-Then the data for each of these routes is displayed in a formatted JSON
-When you test API POST, PUT, and DELETE routes in Insomnia Core
-Then you are able to successfully create, update, and delete users and thoughts in the database
-When you test API POST and DELETE routes in Insomnia Core
-Then you are able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 Packages used:
 Mongoose
 MongoDB
 Express.js
 Moment.js
+
+License:MIT
+
+Images:
+Create User, Delete User, Create Thought- https://drive.google.com/file/d/1VMLULAbl5TCcAAkYpjwZ48pNjeFvpWy4/view
+Get all users, find user by ID - https://drive.google.com/file/d/1l80kFFu3JDwHq2JH2mhsHJAmxu4wVYV4/view
+Create Friend , Delete Friend - https://drive.google.com/file/d/1oMiXTADQFlZcP8ujAU3YEdtdCClPylGy/view 
+
+Installation Instructions:
+Clone the repository to your computer. Run npm install in the root of the folders terminal. Test various API's
+
+Test:
+To test type npm start or node server.js into the terminal
+
+Github:
+Check out more project on my Github at https://github.com/Sarah-McNeel
+
+Email Address:
+Sdawn8912@gmail.com
+
+Contributors:
+Sarah McNeel

@@ -1,6 +1,5 @@
 const { Schema, model, Types } = require("mongoose");
 const { thoughtSchema } = require("./Thought");
-const { reactionSchema } = require("./Reaction")
 
 const userSchema = new Schema(
     {
@@ -18,7 +17,12 @@ const userSchema = new Schema(
                 /^([a-z\d.-]+)@([a-z\d-]+).([a-z]{2,8})$/,
             ],
         },
-        thoughts: [thoughtSchema],
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought'
+            }
+        ],
         friends: [this],
     },
     {
